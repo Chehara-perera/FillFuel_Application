@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoactionActivity">
+    tools:context=".SelectLocationActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView"
         android:layout_width="408dp"
         android:layout_height="64dp"
         android:background="@drawable/round_text"
-        android:text="Location
-"
+        android:text="Select Location"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="36dp"
@@ -27,28 +26,36 @@
         app:layout_constraintVertical_bias="0.019" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="322dp"
-        android:layout_height="335dp"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="131dp"
+        android:id="@+id/imageView2"
+        android:layout_width="360dp"
+        android:layout_height="387dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="115dp"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="318dp"
-        android:layout_height="52dp"
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="549dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="571dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="668dp" />
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="692dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="682dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
