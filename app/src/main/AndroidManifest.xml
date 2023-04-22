@@ -31,6 +31,30 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".Send_FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Order_HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_PasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Card_PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".SelectLocationActivity"
             android:exported="true">
             <intent-filter>
