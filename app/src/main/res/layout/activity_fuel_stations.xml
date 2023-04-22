@@ -14,14 +14,25 @@
         android:text="Fuel Stations"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="36dp"
-
+        android:textSize="25dp"
         android:textStyle="bold"
-
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.019" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/station_recycleview"
+        android:layout_width="409dp"
+        android:layout_height="809dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:listitem="@layout/station_item"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
