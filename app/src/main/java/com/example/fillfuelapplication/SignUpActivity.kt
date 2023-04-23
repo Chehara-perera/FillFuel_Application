@@ -25,6 +25,7 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var database: FirebaseDatabase
     lateinit var sign_in: TextView
+    lateinit var back:Button
 
 
     private lateinit var progressDialog: ProgressDialog
@@ -33,6 +34,12 @@ class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
+
+        back=findViewById(R.id.back8)
+        back.setOnClickListener {
+            startActivity(Intent(this,StartActivity::class.java))
+            finish()
+        }
 
         auth=FirebaseAuth.getInstance()
         database=FirebaseDatabase.getInstance()

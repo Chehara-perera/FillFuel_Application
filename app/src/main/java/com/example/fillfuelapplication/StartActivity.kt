@@ -5,22 +5,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class App_Tips : AppCompatActivity() {
+class StartActivity : AppCompatActivity() {
 
-    lateinit var btnTonext: Button
-
+    lateinit var btn_start: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_app_tips)
+        setContentView(R.layout.activity_start)
 
-        btnTonext = findViewById(R.id.btnTonext)
+        btn_start=findViewById(R.id.btn_app_start)
 
+        btn_start.setOnClickListener {
 
-        btnTonext.setOnClickListener {
-            val myintent= Intent(this,App_Tips2::class.java)
-            startActivity(myintent)
+            startActivity(Intent(this,DashboardActivity::class.java))
             finish()
+
         }
 
     }

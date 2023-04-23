@@ -17,6 +17,7 @@ class SignInActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var database: FirebaseDatabase
     private lateinit var storageReference: StorageReference
+    private lateinit var back:Button
 
 
 
@@ -24,6 +25,7 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
         auth=FirebaseAuth.getInstance()
+
 
         var txt_email: EditText = findViewById(R.id.txt_user_email)
         var txt_password: EditText = findViewById(R.id.txt_pass)
@@ -65,7 +67,7 @@ class SignInActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) {
                         if(it.isSuccessful){
-                            startActivity(Intent(this,PlaceOrderActivity::class.java)
+                            startActivity(Intent(this,DashboardActivity::class.java)
                                 .putExtra("username",txt_email.text.toString()))
                             finish()
                             Toast.makeText(this, "${txt_email.text}is logged in!!!", Toast.LENGTH_SHORT)

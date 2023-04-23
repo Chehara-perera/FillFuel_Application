@@ -19,6 +19,7 @@ class App_Tips2 : AppCompatActivity() {
         btnTonext2.setOnClickListener {
             val myintent= Intent(this,App_Tips3::class.java)
             startActivity(myintent)
+            finish()
         }
     }
 }

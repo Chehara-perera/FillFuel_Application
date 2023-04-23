@@ -5,11 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.EditText
-import android.widget.Spinner
-import android.widget.Toast
+import android.widget.*
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.fillfuelapplication.databinding.ActivityPlaceOrderBinding
@@ -26,6 +22,8 @@ class PlaceOrderActivity : AppCompatActivity() {
     lateinit var storageReference: FirebaseStorage
     lateinit var txt_no:EditText
     lateinit var txt_quanitiy:EditText
+    lateinit var btn_exit: Button
+    lateinit var back:Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +31,17 @@ class PlaceOrderActivity : AppCompatActivity() {
         binding=ActivityPlaceOrderBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
+        btn_exit=findViewById(R.id.btn_exit)
+        btn_exit.setOnClickListener {
+            val myintent=Intent(this,DashboardActivity::class.java)
+            startActivity(myintent)
+            finish()
+        }
+        back=findViewById(R.id.back)
+        back.setOnClickListener {
+            startActivity(Intent(this,OrderActivity::class.java))
+            finish()
+        }
 
         val fuel_type=intent.getStringExtra("fuel_type")
 
@@ -81,9 +90,9 @@ class PlaceOrderActivity : AppCompatActivity() {
                                     Toast.makeText(this,"Successfully uploaded!!!", Toast.LENGTH_SHORT).show()
                                     startActivity(Intent(this,PaymentActivity::class.java)
                                         .putExtra("vehicle_no",txt_no.text.toString())
-                                        .putExtra("Fuel_Quantity",txt_quanitiy.text.toString())
+                                        .putExtra("Fuel_Quantity",txt_quanitiy.text.toString().toDouble())
                                         .putExtra("Fuel_Type",fuel_type))
-                                    finish()
+
                                 }
                                 .addOnFailureListener {
                                     Toast.makeText(this,"Unsuccessful" , Toast.LENGTH_SHORT).show()

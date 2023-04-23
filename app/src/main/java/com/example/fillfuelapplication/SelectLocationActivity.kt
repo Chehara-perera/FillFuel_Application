@@ -33,7 +33,6 @@ class SelectLocationActivity : AppCompatActivity(), OnMapReadyCallback {
             startActivity(
                 Intent(this,FuelStationsActivity::class.java)
                 .putExtra("location",mapSearchView.toString()))
-            finish()
 
         }
 
