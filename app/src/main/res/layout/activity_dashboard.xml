@@ -37,46 +37,47 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
-            android:layout_width="329dp"
-            android:layout_height="138dp"
+            android:layout_width="331dp"
+            android:layout_height="137dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.065">
+            app:layout_constraintVertical_bias="0.071">
 
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
                 android:layout_marginTop="57dp"
-                android:layout_marginEnd="30dp"
                 android:layout_marginBottom="62dp"
-                android:text="Hi ! "
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/txt_name_user"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/txt_name_user"
-                android:layout_width="218dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="47dp"
-                android:layout_marginEnd="29dp"
-                android:layout_marginBottom="46dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name"
+                android:text="Welcome ! "
+                android:textColor="@color/black"
+                android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView18"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintHorizontal_bias="0.12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/txt_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.751"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.436" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
@@ -84,7 +85,7 @@
             android:layout_width="146dp"
             android:layout_height="51dp"
             android:backgroundTint="@color/white"
-            android:text="Orders"
+            android:text="Order"
             android:textColor="@color/blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -94,18 +95,18 @@
             app:layout_constraintVertical_bias="0.709" />
 
         <Button
-            android:id="@+id/btn_dash_loc"
+            android:id="@+id/btn_log"
             android:layout_width="140dp"
             android:layout_height="50dp"
             android:backgroundTint="@color/white"
-            android:text="Location"
+            android:text="Log Out"
             android:textColor="@color/blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.968"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.71" />
+            app:layout_constraintVertical_bias="0.819" />
 
         <Button
             android:id="@+id/btn_dash_profile"
@@ -116,10 +117,10 @@
             android:textColor="@color/blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.547"
+            app:layout_constraintHorizontal_bias="0.928"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.828" />
+            app:layout_constraintVertical_bias="0.71" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
