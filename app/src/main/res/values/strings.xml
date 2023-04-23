@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">FillFuel Application</string>
+
+    <string-array name="payment_types_array">
+        <item>Cash</item>
+        <item>Card</item>
+    </string-array>
+
+    <string-array name="card_types_array">
+        <item>Select card type</item>
+        <item>Master</item>
+        <item>Visa</item>
+        <item>Paypal</item>
+    </string-array>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.fillfuelapplication
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,6 +17,7 @@ class SignInActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var database: FirebaseDatabase
     private lateinit var storageReference: StorageReference
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +41,15 @@ class SignInActivity : AppCompatActivity() {
             startActivity(myintent)
             finish()
         }
+        var btn_feed: Button
+        btn_feed = findViewById(R.id.btn_feed)
+
+        btn_feed.setOnClickListener {
+            val myintent = Intent(this, Send_FeedbackActivity::class.java)
+            startActivity(myintent)
+            finish()
+
+        }
         btn_sign.setOnClickListener(){
             val email=txt_email.text.toString()
             val password=txt_password.text.toString()
@@ -59,7 +70,6 @@ class SignInActivity : AppCompatActivity() {
                             finish()
                             Toast.makeText(this, "${txt_email.text}is logged in!!!", Toast.LENGTH_SHORT)
                                 .show()
-
                         }
                         else
                         {
@@ -68,9 +78,6 @@ class SignInActivity : AppCompatActivity() {
 
                     }
             }
-
-
-
 
         }
     }
