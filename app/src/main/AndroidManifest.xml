@@ -15,8 +15,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FillFuelApplication"
         tools:targetApi="31">
+
+        <activity
+            android:name=".App_Tips3"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".App_Tips2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".SelectLocationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".App_Tips"
             android:exported="false" />
         <activity
             android:name=".SignInActivity"

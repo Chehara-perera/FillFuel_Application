@@ -24,6 +24,7 @@ class SignUpActivity : AppCompatActivity() {
     lateinit var btn_sign_up:Button
     private lateinit var auth: FirebaseAuth
     private lateinit var database: FirebaseDatabase
+    lateinit var sign_in: TextView
 
 
     private lateinit var progressDialog: ProgressDialog
@@ -48,7 +49,13 @@ class SignUpActivity : AppCompatActivity() {
         txt_contact=findViewById(R.id.txt_contact)
         txt_pass=findViewById(R.id.txt_password)
         txt_re=findViewById(R.id.txt_re)
+        sign_in =findViewById(R.id.sign_in)
         btn_sign_up=findViewById(R.id.btn_sign_up)
+
+        sign_in.setOnClickListener {
+            val myintent=Intent(this,SignInActivity::class.java)
+            startActivity(myintent)
+        }
 
         btn_sign_up.setOnClickListener{
             saveUser()
@@ -95,7 +102,6 @@ class SignUpActivity : AppCompatActivity() {
             txt_re.error = "please re-enter you password"
             return
         }
-
         if(password==re_password)
         {
             progressDialog.setMessage("Registering User...")
