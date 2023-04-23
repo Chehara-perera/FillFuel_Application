@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="1.0">
 
         <ImageView
             android:id="@+id/imageView10"
@@ -32,7 +32,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.44"
-            tools:srcCompat="@drawable/dash" />
+            android:background="@drawable/dash"
+            />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
@@ -63,8 +64,8 @@
 
             <EditText
                 android:id="@+id/txt_name_user"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="218dp"
+                android:layout_height="52dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="47dp"
                 android:layout_marginEnd="29dp"
@@ -82,43 +83,43 @@
             android:id="@+id/btn_dash_order"
             android:layout_width="146dp"
             android:layout_height="51dp"
+            android:backgroundTint="@color/white"
             android:text="Orders"
+            android:textColor="@color/blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintHorizontal_bias="0.073"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.712"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/blue"/>
+            app:layout_constraintVertical_bias="0.709" />
 
         <Button
             android:id="@+id/btn_dash_loc"
             android:layout_width="140dp"
             android:layout_height="50dp"
+            android:backgroundTint="@color/white"
             android:text="Location"
+            android:textColor="@color/blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.968"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.71"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/blue"/>
+            app:layout_constraintVertical_bias="0.71" />
 
         <Button
             android:id="@+id/btn_dash_profile"
-            android:layout_width="155dp"
-            android:layout_height="52dp"
-            android:background="draw"
+            android:layout_width="140dp"
+            android:layout_height="53dp"
             android:backgroundTint="@color/white"
-            android:text="Profile"
+            android:text="   Profile"
             android:textColor="@color/blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.547"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.841" />
+            app:layout_constraintVertical_bias="0.828" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

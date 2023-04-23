@@ -18,6 +18,8 @@ class FuelStationsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fuel_stations)
 
+        val location=intent.getStringExtra("location")
+
         stationRecyclerView=findViewById(R.id.station_recycleview)
         stationRecyclerView.layoutManager= LinearLayoutManager(this)
         stationRecyclerView.setHasFixedSize(true)

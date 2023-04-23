@@ -1,19 +1,24 @@
 package com.example.fillfuelapplication
 
+import android.content.Intent
 import android.location.Address
 import android.location.Geocoder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.SearchView
+import android.widget.Button
+import androidx.appcompat.widget.SearchView
+import android.widget.Toast
 import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.firebase.database.FirebaseDatabase
 import java.io.IOException
 
 class SelectLocationActivity : AppCompatActivity(), OnMapReadyCallback {
 
     lateinit var myMap:GoogleMap
     lateinit var mapSearchView:SearchView
+    lateinit var btn_next: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +27,15 @@ class SelectLocationActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
         mapSearchView = findViewById(R.id.search_location)
+        btn_next = findViewById(R.id.btn_next)
+        btn_next.setOnClickListener{
+
+            startActivity(
+                Intent(this,FuelStationsActivity::class.java)
+                .putExtra("location",mapSearchView.toString()))
+            finish()
+
+        }
 
 
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
@@ -57,10 +71,15 @@ class SelectLocationActivity : AppCompatActivity(), OnMapReadyCallback {
 
         })
         mapFragment.getMapAsync(this@SelectLocationActivity)
+
+
+
     }
 
     override fun onMapReady(googleMap:GoogleMap) {
         myMap = googleMap
 
     }
+
+
 }

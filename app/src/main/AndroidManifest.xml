@@ -16,6 +16,12 @@
         android:theme="@style/Theme.FillFuelApplication"
         tools:targetApi="31">
         <activity
+            android:name=".SelectLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
             android:name=".DashboardActivity"
             android:exported="false" />
         <activity
@@ -58,7 +64,7 @@
             android:name=".Card_PaymentActivity"
             android:exported="false" />
         <activity
-            android:name=".SelectLocationActivity"
+            android:name=".SignUpActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
