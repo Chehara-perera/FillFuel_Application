@@ -1,7 +1,9 @@
 package com.example.fillfuelapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
@@ -13,19 +15,26 @@ class FuelStationsActivity : AppCompatActivity() {
     private lateinit var stationRecyclerView: RecyclerView
     private lateinit var stationArrayList: ArrayList<Station>
     private lateinit var auth: FirebaseAuth
+    private lateinit var btn_fuel:Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fuel_stations)
 
+        btn_fuel=findViewById(R.id.btn_fuel)
         val location=intent.getStringExtra("location")
-
         stationRecyclerView=findViewById(R.id.station_recycleview)
         stationRecyclerView.layoutManager= LinearLayoutManager(this)
         stationRecyclerView.setHasFixedSize(true)
 
         stationArrayList= arrayListOf<Station>()
         getStationData()
+
+        btn_fuel.setOnClickListener {
+            val myintent= Intent(this,PlaceOrderActivity::class.java)
+            startActivity(myintent)
+        }
 
 
     }

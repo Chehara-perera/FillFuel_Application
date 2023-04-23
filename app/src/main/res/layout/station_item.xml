@@ -7,11 +7,12 @@
     android:layout_margin="16dp"
     android:backgroundTint="@color/white"
     app:cardCornerRadius="8dp"
-    app:cardElevation="8dp">
+    app:cardElevation="8dp"
+    android:background="@drawable/bg_search_view">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="171dp"
+        android:layout_width="358dp"
+        android:layout_height="108dp"
         android:layout_margin="16dp"
         android:backgroundTint="@color/white"
         app:cardCornerRadius="8dp"
@@ -24,10 +25,10 @@
 
             <ImageView
                 android:id="@+id/imageView9"
-                android:layout_width="152dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="78dp"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@tools:sample/avatars[0]" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -45,16 +46,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Name : " />
+                        android:text="Name : "
+                        android:textColor="@color/black" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/txt_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Name" />
+                        android:text="Name"
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -67,16 +70,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Loaction : " />
+                        android:text="Loaction : "
+                        android:textColor="@color/black" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/txt_loc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Location" />
+                        android:text="Location"
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -89,17 +94,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Distance : " />
+                        android:text="Distance : "
+                        android:textColor="@color/black" />
 
-                    <EditText
+                    <TextView
+
                         android:id="@+id/txt_dis"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Distance" />
+                        android:text="Distance"
+                        android:textColor="@color/black" />
                 </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>

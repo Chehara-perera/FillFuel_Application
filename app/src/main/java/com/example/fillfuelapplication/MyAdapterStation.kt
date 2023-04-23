@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 class MyAdapterStation(private val stationList:ArrayList<Station>) :
     RecyclerView.Adapter<MyAdapterStation.MyViewHolder>() {
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
         val itemView= LayoutInflater.from(parent.context).inflate(R.layout.station_item,

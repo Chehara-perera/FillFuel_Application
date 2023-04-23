@@ -1,11 +1,13 @@
 package com.example.fillfuelapplication
 
+import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.EditText
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.activity.result.ActivityResultCallback
@@ -22,15 +24,20 @@ class PlaceOrderActivity : AppCompatActivity() {
     lateinit var database: FirebaseDatabase
     lateinit var auth: FirebaseAuth
     lateinit var storageReference: FirebaseStorage
+    lateinit var txt_no:EditText
+    lateinit var txt_quanitiy:EditText
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivityPlaceOrderBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        auth = FirebaseAuth.getInstance()
 
-        val items = listOf("Item 1", "Item 2", "Item 3", "Item 4")
+        val items = listOf("Vehicle Type", "Car/ Van/ Jeep", "Motor Bike/ Scooter", "ThreeWheeler","Truck","Bus")
         val spinner = findViewById<Spinner>(R.id.spinner)
+        txt_no=findViewById(R.id.txt_no)
+        txt_quanitiy=findViewById(R.id.txt_quantity)
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
@@ -43,8 +50,6 @@ class PlaceOrderActivity : AppCompatActivity() {
                 // do nothing
             }
         }
-
-
 
 
         val getImage=registerForActivityResult(
@@ -71,6 +76,10 @@ class PlaceOrderActivity : AppCompatActivity() {
                             val databaseReference=FirebaseDatabase.getInstance().getReference("userImages").child(auth.currentUser!!.uid).setValue(imageMap)
                                 .addOnSuccessListener {
                                     Toast.makeText(this,"Successfully uploaded!!!", Toast.LENGTH_SHORT).show()
+                                    startActivity(Intent(this,PaymentActivity::class.java)
+                                        .putExtra("vehicle_no",txt_no.text.toString())
+                                        .putExtra("Fuel Quantity",txt_quanitiy.text.toString()))
+                                    finish()
                                 }
                                 .addOnFailureListener {
                                     Toast.makeText(this,"Unsuccessful" , Toast.LENGTH_SHORT).show()
@@ -81,6 +90,9 @@ class PlaceOrderActivity : AppCompatActivity() {
                 }.addOnFailureListener{
                     Toast.makeText(this,"Unsuccessful" , Toast.LENGTH_SHORT).show()
                 }
+
+
+
         }
 
 
