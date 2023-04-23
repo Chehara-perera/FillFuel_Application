@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageview_home"
         android:layout_width="303dp"
         android:layout_height="269dp"
 
@@ -33,7 +33,7 @@
         tools:srcCompat="@drawable/a_order" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageView_loca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="376dp"

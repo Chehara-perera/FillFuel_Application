@@ -71,7 +71,7 @@ class PlaceOrderActivity : AppCompatActivity() {
         binding.btnOrder.setOnClickListener{
             val storageReference=FirebaseStorage.getInstance().getReference("images").child(System.currentTimeMillis().toString())
                 .putFile(uri)
-                .addOnSuccessListener { task->
+                .addOnSuccessListener {task->
                     task.metadata!!.reference!!.downloadUrl
                         .addOnSuccessListener {
                             val uid=FirebaseAuth.getInstance().currentUser!!.uid

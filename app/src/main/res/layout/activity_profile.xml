@@ -7,6 +7,81 @@
     tools:context=".ProfileActivity">
 
     <TextView
+        android:id="@+id/textView13"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:background="#F5F5F5"
+        android:text=""
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+    <ImageView
+        android:id="@+id/imageViewprofile"
+        android:layout_width="54dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969"
+        app:srcCompat="@drawable/ic_outline_account_circle_24" />
+
+    <ImageView
+        android:id="@+id/imageView_orders"
+        android:layout_width="54dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969"
+        app:srcCompat="@drawable/ic_outline_shopping_cart_24" />
+
+    <ImageView
+        android:id="@+id/imageView_loca"
+        android:layout_width="54dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969"
+        app:srcCompat="@drawable/ic_outline_add_location_alt_24" />
+
+    <ImageView
+        android:id="@+id/imageview_home"
+        android:layout_width="54dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969"
+        app:srcCompat="@drawable/ic_outline_home_24" />
+
+    <ImageView
+        android:id="@+id/imageView_profile3"
+        android:layout_width="108dp"
+        android:layout_height="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125"
+        app:srcCompat="@drawable/ic_outline_account_circle_24" />
+
+    <TextView
         android:id="@+id/textView15"
         android:layout_width="408dp"
         android:layout_height="64dp"
@@ -27,22 +102,23 @@
         app:layout_constraintVertical_bias="0.019" />
 
     <ImageView
-        android:id="@+id/imageView_profileback"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
+        android:id="@+id/profile_back"
+        android:layout_width="39dp"
+        android:layout_height="34dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+        app:layout_constraintVertical_bias="0.036"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 
     <Button
         android:id="@+id/btn_forgot_psw"
         android:layout_width="186dp"
         android:layout_height="94dp"
         android:background="@drawable/round_text"
+        android:drawableTop="@drawable/ic_baseline_lock_open_24"
         android:text="Forgot Password"
         android:textColor="@color/white"
         android:textSize="18dp"
@@ -58,6 +134,7 @@
         android:layout_width="186dp"
         android:layout_height="94dp"
         android:background="@drawable/round_text"
+        android:drawableTop="@drawable/ic_baseline_power_settings_new_24"
         android:text="Sign Out"
         android:textColor="@color/white"
         android:textSize="18dp"
@@ -73,6 +150,7 @@
         android:layout_width="186dp"
         android:layout_height="94dp"
         android:background="@drawable/round_text"
+        android:drawableTop="@drawable/ic_baseline_help_24"
         android:text="Help"
         android:textColor="@color/white"
         android:textSize="18dp"
@@ -88,6 +166,7 @@
         android:layout_width="186dp"
         android:layout_height="94dp"
         android:background="@drawable/round_text"
+        android:drawableTop="@drawable/ic_baseline_notifications_24"
         android:text="Notifications"
         android:textColor="@color/white"
         android:textSize="18dp"
@@ -103,6 +182,7 @@
         android:layout_width="186dp"
         android:layout_height="94dp"
         android:background="@drawable/round_text"
+        android:drawableTop="@drawable/ic_baseline_feedback_24"
         android:text="Feedback"
         android:textColor="@color/white"
         android:textSize="18dp"
@@ -118,6 +198,7 @@
         android:layout_width="186dp"
         android:layout_height="94dp"
         android:background="@drawable/round_text"
+        android:drawableTop="@drawable/ic_baseline_whitelocation_on_24"
         android:text="Address"
         android:textColor="@color/white"
         android:textSize="18dp"
@@ -127,56 +208,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.287" />
-
-    <ImageView
-        android:id="@+id/imageView_profile2"
-        android:layout_width="54dp"
-        android:layout_height="43dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@drawable/ic_outline_account_circle_24" />
-
-    <ImageView
-        android:id="@+id/imageView_cart2"
-        android:layout_width="54dp"
-        android:layout_height="43dp"
-        android:layout_marginEnd="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.737"
-        app:layout_constraintStart_toStartOf="@+id/textView17"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@drawable/ic_outline_shopping_cart_24"
-        tools:ignore="UnknownId,UnknownIdInLayout" />
-
-    <ImageView
-        android:id="@+id/imageView_location2"
-        android:layout_width="54dp"
-        android:layout_height="43dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.246"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@drawable/ic_outline_add_location_alt_24" />
-
-    <ImageView
-        android:id="@+id/imageView_home2"
-        android:layout_width="54dp"
-        android:layout_height="43dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@drawable/ic_outline_home_24" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -190,24 +221,12 @@
         app:layout_constraintVertical_bias="0.938"
         app:srcCompat="@drawable/ic_outline_add_box_24" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="400dp"
-        android:layout_height="70dp"
-        android:background="@color/cardview_shadow_end_color"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.272"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.991" />
-
     <Button
         android:id="@+id/btn_orders"
         android:layout_width="186dp"
         android:layout_height="94dp"
         android:background="@drawable/round_text"
+        android:drawableTop="@drawable/ic_baseline_shopping_whitecart_24"
         android:text="Orders"
         android:textColor="@color/white"
         android:textSize="18dp"
@@ -217,5 +236,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.288" />
+
+    <TextView
+        android:id="@+id/pro_name"
+        android:layout_width="181dp"
+        android:layout_height="53dp"
+        android:text="Profile Name"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_notifi"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

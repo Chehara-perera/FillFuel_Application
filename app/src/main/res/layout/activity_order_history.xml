@@ -47,8 +47,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_order_history"
-        android:layout_width="390dp"
-        android:layout_height="628dp"
+        android:layout_width="396dp"
+        android:layout_height="676dp"
         android:layout_marginTop="108dp"
         android:background="@drawable/round_recycle"
         app:layout_constraintBottom_toBottomOf="@+id/textView11"
@@ -78,16 +78,16 @@
         app:layout_constraintVertical_bias="0.019" />
 
     <ImageView
-        android:id="@+id/imageview_orderhisback"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
+        android:id="@+id/orderhistory_back"
+        android:layout_width="39dp"
+        android:layout_height="34dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+        app:layout_constraintVertical_bias="0.036"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 
     <ImageView
         android:id="@+id/imageView39"
