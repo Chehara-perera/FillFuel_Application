@@ -34,6 +34,9 @@ class PlaceOrderActivity : AppCompatActivity() {
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
 
+        val fuel_type=intent.getStringExtra("fuel_type")
+
+
         val items = listOf("Vehicle Type", "Car/ Van/ Jeep", "Motor Bike/ Scooter", "ThreeWheeler","Truck","Bus")
         val spinner = findViewById<Spinner>(R.id.spinner)
         txt_no=findViewById(R.id.txt_no)
@@ -78,7 +81,8 @@ class PlaceOrderActivity : AppCompatActivity() {
                                     Toast.makeText(this,"Successfully uploaded!!!", Toast.LENGTH_SHORT).show()
                                     startActivity(Intent(this,PaymentActivity::class.java)
                                         .putExtra("vehicle_no",txt_no.text.toString())
-                                        .putExtra("Fuel Quantity",txt_quanitiy.text.toString()))
+                                        .putExtra("Fuel_Quantity",txt_quanitiy.text.toString())
+                                        .putExtra("Fuel_Type",fuel_type))
                                     finish()
                                 }
                                 .addOnFailureListener {

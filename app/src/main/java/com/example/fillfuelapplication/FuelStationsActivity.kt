@@ -32,7 +32,7 @@ class FuelStationsActivity : AppCompatActivity() {
         getStationData()
 
         btn_fuel.setOnClickListener {
-            val myintent= Intent(this,PlaceOrderActivity::class.java)
+            val myintent= Intent(this,OrderActivity::class.java)
             startActivity(myintent)
         }
 
