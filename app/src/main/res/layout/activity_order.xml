@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrderActivity">
+    tools:context=".OrderActivity"
+    android:background="@color/white">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -35,10 +36,10 @@
 
                 <ImageView
                     android:id="@+id/image_QR"
-                    android:layout_width="152dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="197dp"
+                    android:layout_height="147dp"
                     android:layout_weight="1"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:background="@drawable/f1" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -56,16 +57,18 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Name : " />
+                            android:text="Name : "
+                            android:textColor="@color/black"/>
 
-                        <EditText
+                        <TextView
                             android:id="@+id/txt_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
+                            android:textColor="@color/black"
                             android:inputType="textPersonName"
-                            android:text="Name" />
+                            android:text="Dematagoda Filling Station" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -78,16 +81,18 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Loaction : " />
+                            android:text="Loaction : "
+                            android:textColor="@color/black"/>
 
-                        <EditText
+                        <TextView
                             android:id="@+id/txt_loc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
                             android:inputType="textPersonName"
-                            android:text="Location" />
+                            android:text="Dematagoda"
+                            android:textColor="@color/black"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -100,16 +105,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Distance : " />
+                            android:text="Distance : "
+                            android:textColor="@color/black"/>
 
-                        <EditText
+                        <TextView
                             android:id="@+id/txt_dis"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
                             android:inputType="textPersonName"
-                            android:text="Distance" />
+                            android:text="1 km"
+                            android:textColor="@color/black"
+                            />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -156,7 +164,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.818"
-        tools:srcCompat="@drawable/diesel" />
+        android:background="@drawable/diesel"
+        />
 
     <ImageView
         android:id="@+id/diesel_image"
@@ -168,18 +177,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.819"
-        tools:srcCompat="@drawable/images" />
+        android:background="@drawable/images" />
 
     <ImageView
         android:id="@+id/super_diesel_image"
-        android:layout_width="160dp"
-        android:layout_height="145dp"
+        android:layout_width="132dp"
+        android:layout_height="139dp"
+        android:background="@drawable/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/save" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_petrol92"
@@ -231,9 +240,13 @@
 
     <ImageView
         android:id="@+id/petrol95_image"
-        android:layout_width="160dp"
-        android:layout_height="140dp"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="373dp"
-        tools:srcCompat="@drawable/d" />
+        android:layout_width="148dp"
+        android:layout_height="133dp"
+        android:background="@drawable/d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
 </androidx.constraintlayout.widget.ConstraintLayout>

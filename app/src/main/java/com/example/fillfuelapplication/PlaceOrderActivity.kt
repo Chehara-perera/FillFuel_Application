@@ -37,11 +37,6 @@ class PlaceOrderActivity : AppCompatActivity() {
             startActivity(myintent)
             finish()
         }
-        back=findViewById(R.id.back)
-        back.setOnClickListener {
-            startActivity(Intent(this,OrderActivity::class.java))
-            finish()
-        }
 
         val fuel_type=intent.getStringExtra("fuel_type")
 

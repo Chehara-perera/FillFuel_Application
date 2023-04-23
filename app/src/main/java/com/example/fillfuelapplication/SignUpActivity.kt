@@ -35,11 +35,6 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        back=findViewById(R.id.back8)
-        back.setOnClickListener {
-            startActivity(Intent(this,StartActivity::class.java))
-            finish()
-        }
 
         auth=FirebaseAuth.getInstance()
         database=FirebaseDatabase.getInstance()

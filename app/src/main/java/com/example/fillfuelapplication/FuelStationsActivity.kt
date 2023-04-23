@@ -23,12 +23,7 @@ class FuelStationsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fuel_stations)
 
-        back=findViewById(R.id.back3)
 
-        back.setOnClickListener{
-            startActivity(Intent(this,SelectLocationActivity::class.java))
-            finish()
-        }
 
         btn_fuel=findViewById(R.id.btn_fuel)
         val location=intent.getStringExtra("location")

@@ -16,11 +16,6 @@ class OrderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_order)
 
-        back=findViewById(R.id.back5)
-        back.setOnClickListener {
-            startActivity(Intent(this,FuelStationsActivity::class.java))
-            finish()
-        }
         btn_diesel=findViewById(R.id.btn_diesel)
         btn_petrol92=findViewById(R.id.btn_petrol92)
         btn_petrol95=findViewById(R.id.btn_petrol95)

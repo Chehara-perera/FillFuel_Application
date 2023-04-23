@@ -17,7 +17,7 @@ class StartActivity : AppCompatActivity() {
 
         btn_start.setOnClickListener {
 
-            startActivity(Intent(this,DashboardActivity::class.java))
+            startActivity(Intent(this,SignUpActivity::class.java))
             finish()
 
         }
