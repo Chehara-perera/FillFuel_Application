@@ -11,6 +11,7 @@ class OrderActivity : AppCompatActivity() {
     private lateinit var btn_petrol95:Button
     private lateinit var btn_diesel:Button
     private lateinit var btn_super_diesel:Button
+    private lateinit var back:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_order)
@@ -25,28 +26,28 @@ class OrderActivity : AppCompatActivity() {
             startActivity(
                 Intent(this,PlaceOrderActivity::class.java)
                 .putExtra("fuel_type",fuel_type))
-            finish()
+
         }
         btn_petrol92.setOnClickListener {
             val fuel_type="petrol92"
             startActivity(
                 Intent(this,PlaceOrderActivity::class.java)
                     .putExtra("fuel_type",fuel_type))
-            finish()
+
         }
         btn_petrol95.setOnClickListener {
             val fuel_type="petrol95"
             startActivity(
                 Intent(this,PlaceOrderActivity::class.java)
                     .putExtra("fuel_type",fuel_type))
-            finish()
+
         }
         btn_super_diesel.setOnClickListener {
             val fuel_type="superdiesel"
             startActivity(
                 Intent(this,PlaceOrderActivity::class.java)
                     .putExtra("fuel_type",fuel_type))
-            finish()
+
         }
     }
 }

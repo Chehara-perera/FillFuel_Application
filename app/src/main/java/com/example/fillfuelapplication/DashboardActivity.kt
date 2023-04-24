@@ -29,7 +29,9 @@ class DashboardActivity : AppCompatActivity() {
 
 
         btn_log.setOnClickListener {
-            Log.d("MyTag", "Logging out...")
+            val myintent=Intent(this,SignInActivity::class.java)
+            startActivity(myintent)
+            finish()
         }
         btn_order.setOnClickListener {
             val myintent=Intent(this,SelectLocationActivity::class.java)
