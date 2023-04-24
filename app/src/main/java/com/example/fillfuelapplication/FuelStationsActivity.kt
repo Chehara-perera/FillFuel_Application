@@ -16,11 +16,14 @@ class FuelStationsActivity : AppCompatActivity() {
     private lateinit var stationArrayList: ArrayList<Station>
     private lateinit var auth: FirebaseAuth
     private lateinit var btn_fuel:Button
+    private lateinit var back:Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fuel_stations)
+
+
 
         btn_fuel=findViewById(R.id.btn_fuel)
         val location=intent.getStringExtra("location")
