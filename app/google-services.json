@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "825659728666",
+    "project_id": "fillfuelapplication",
+    "storage_bucket": "fillfuelapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825659728666:android:d65ec7bf534a41bd8f82a3",
+        "android_client_info": {
+          "package_name": "com.example.fillfuelapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825659728666-r9qgm05rstcrb9jg0iruiuoebknt5eae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgJYtowIznz1Z1xji_sow6ZJGoWC96rJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825659728666-r9qgm05rstcrb9jg0iruiuoebknt5eae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
