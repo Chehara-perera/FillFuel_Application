@@ -85,7 +85,7 @@ class PlaceOrderActivity : AppCompatActivity() {
                                     Toast.makeText(this,"Successfully uploaded!!!", Toast.LENGTH_SHORT).show()
                                     startActivity(Intent(this,PaymentActivity::class.java)
                                         .putExtra("vehicle_no",txt_no.text.toString())
-                                        .putExtra("Fuel_Quantity",txt_quanitiy.text.toString().toDouble())
+                                        .putExtra("Fuel_Quantity",txt_quanitiy.text.toString())
                                         .putExtra("Fuel_Type",fuel_type))
 
                                 }

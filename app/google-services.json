@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "825659728666",
+    "firebase_url": "https://fillfuelapplication-default-rtdb.firebaseio.com",
     "project_id": "fillfuelapplication",
     "storage_bucket": "fillfuelapplication.appspot.com"
   },
