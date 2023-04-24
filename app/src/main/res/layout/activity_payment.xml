@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaymentActivity">
+    tools:context=".PaymentActivity"
+    android:background="@color/white">
 
     <Button
         android:id="@+id/btn_continuepay"
@@ -23,6 +24,7 @@
 
     <EditText
         android:id="@+id/txt_totamount"
+        android:textColor="@color/black"
         android:layout_width="211dp"
         android:layout_height="63dp"
         android:ems="10"
@@ -99,6 +101,7 @@
         android:id="@+id/spinner_paymethod"
         android:layout_width="138dp"
         android:layout_height="51dp"
+        android:background="@drawable/bg_search_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.941"

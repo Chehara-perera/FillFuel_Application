@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Card_PaymentActivity">
+    tools:context=".Card_PaymentActivity"
+    android:background="@color/white">
 
     <Button
         android:id="@+id/btn_next_cardpay"
@@ -26,6 +27,8 @@
         android:layout_width="339dp"
         android:layout_height="65dp"
         android:ems="10"
+        android:background="@drawable/bg_search_view"
+        android:textColor="@color/black"
         android:hint="Card Number"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,6 +44,8 @@
         android:layout_height="65dp"
         android:ems="10"
         android:hint="CVV"
+        android:background="@drawable/bg_search_view"
+        android:textColor="@color/black"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +59,9 @@
         android:layout_width="339dp"
         android:layout_height="65dp"
         android:ems="10"
+        android:textColor="@color/black"
         android:hint="Name of CardHolder"
+        android:background="@drawable/bg_search_view"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +91,7 @@
         android:background="@drawable/round_text"
         android:text="Card Payment"
         android:textAlignment="center"
-        android:textColor="@color/white"
+
         android:textSize="36dp"
 
         android:textStyle="bold"
@@ -113,6 +120,7 @@
         android:layout_width="339dp"
         android:layout_height="65dp"
         android:spinnerMode="dropdown"
+        android:background="@drawable/bg_search_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.611"

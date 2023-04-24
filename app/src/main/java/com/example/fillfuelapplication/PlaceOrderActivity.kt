@@ -23,7 +23,7 @@ class PlaceOrderActivity : AppCompatActivity() {
     lateinit var txt_no:EditText
     lateinit var txt_quanitiy:EditText
     lateinit var btn_exit: Button
-    lateinit var back:Button
+    lateinit var back:ImageView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +38,12 @@ class PlaceOrderActivity : AppCompatActivity() {
             finish()
         }
 
+        back=findViewById(R.id.back)
+        back.setOnClickListener {
+            val myintent=Intent(this,PlaceOrderActivity::class.java)
+            startActivity(myintent)
+            finish()
+        }
         val fuel_type=intent.getStringExtra("fuel_type")
 
 

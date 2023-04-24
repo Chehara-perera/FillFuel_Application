@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Send_FeedbackActivity">
+    tools:context=".Send_FeedbackActivity"
+    android:background="@color/white">
 
     <Button
         android:id="@+id/btn_feedback_send"
@@ -61,6 +62,8 @@
         android:ems="10"
         android:gravity="start|top"
         android:hint="Type your Feedback here."
+        android:textColor="@color/black"
+        android:background="@drawable/bg_search_view"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -57,7 +57,7 @@ class SignInActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) {
                         if(it.isSuccessful){
-                            startActivity(Intent(this,PlaceOrderActivity::class.java)
+                            startActivity(Intent(this,DashboardActivity::class.java)
                                 .putExtra("username",txt_email.text.toString()))
                             finish()
                             Toast.makeText(this, "${txt_email.text}is logged in!!!", Toast.LENGTH_SHORT)

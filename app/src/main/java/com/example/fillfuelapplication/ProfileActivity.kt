@@ -82,19 +82,12 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(myintent)
             finish()
         }
-        var home: ImageView
-        home = findViewById(R.id.imageView_home)
 
-        home.setOnClickListener {
-            val myintent = Intent(this, DashboardActivity::class.java)
-            startActivity(myintent)
-            finish()
-        }
         var location: ImageView
         location = findViewById(R.id.imageView_loca)
 
         location.setOnClickListener {
-            val myintent = Intent(this, LocationActivity::class.java)
+            val myintent = Intent(this,SelectLocationActivity::class.java)
             startActivity(myintent)
             finish()
         }
@@ -107,13 +100,6 @@ class ProfileActivity : AppCompatActivity() {
             finish()
         }
 
-        var profile: ImageView
-        profile = findViewById(R.id.imageView_home)
 
-        profile.setOnClickListener {
-            val myintent = Intent(this, ProfileActivity::class.java)
-            startActivity(myintent)
-            finish()
-        }
     }
 }

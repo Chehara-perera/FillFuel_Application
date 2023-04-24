@@ -81,6 +81,9 @@ class Card_PaymentActivity : AppCompatActivity() {
             ref.child(cardholder_name).setValue(cardpayment).addOnCompleteListener {
                 if (it.isSuccessful) {
                     Toast.makeText(this, "Payment made successfully!!!", Toast.LENGTH_SHORT).show()
+                    val myintent=Intent(this,ProfileActivity::class.java)
+                    startActivity(myintent)
+                    finish()
                 } else {
                     Toast.makeText(this, "Something went wrong, try again", Toast.LENGTH_SHORT).show()
                 }
