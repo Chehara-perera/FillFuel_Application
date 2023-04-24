@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 
 class OrderActivity : AppCompatActivity() {
 
@@ -11,7 +12,7 @@ class OrderActivity : AppCompatActivity() {
     private lateinit var btn_petrol95:Button
     private lateinit var btn_diesel:Button
     private lateinit var btn_super_diesel:Button
-    private lateinit var back:Button
+    private lateinit var back:ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_order)
