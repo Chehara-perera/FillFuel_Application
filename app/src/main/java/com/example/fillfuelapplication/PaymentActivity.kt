@@ -30,7 +30,7 @@ class PaymentActivity : AppCompatActivity() {
 
         // Get the fuel type, fuel quantity, and vehicle number from the previous activity
         fuelType = intent.getStringExtra("Fuel_Type").toString()
-        fuelQuantity = intent.getStringExtra("Fuel Quantity")!!.toDouble()
+        fuelQuantity = intent.getStringExtra("Fuel_Quantity").toString().toDouble()
         vehicleNumber = intent.getStringExtra("vehicle_no").toString()
 
         // Calculate the total amount based on fuel type and quantity
