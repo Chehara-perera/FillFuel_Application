@@ -41,15 +41,7 @@ class SignInActivity : AppCompatActivity() {
             startActivity(myintent)
             finish()
         }
-        var btn_feed: Button
-        btn_feed = findViewById(R.id.btn_feed)
 
-        btn_feed.setOnClickListener {
-            val myintent = Intent(this, Send_FeedbackActivity::class.java)
-            startActivity(myintent)
-            finish()
-
-        }
         btn_sign.setOnClickListener(){
             val email=txt_email.text.toString()
             val password=txt_password.text.toString()
